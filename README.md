@@ -7,6 +7,7 @@
 git clone https://github.com/m8rix/code_challenge_201109.git
 cd code_challenge_201109
 bundle install
+rails db:migrate
 rails c
 ```
 
