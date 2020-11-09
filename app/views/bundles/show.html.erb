@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @bundle.size %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @bundle.price %>
+</p>
+
+<p>
+  <strong>Submission format:</strong>
+  <%= @bundle.submission_format_id %>
+</p>
+
+<%= link_to 'Edit', edit_bundle_path(@bundle) %> |
+<%= link_to 'Back', bundles_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @submission_format.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @submission_format.code %>
+</p>
+
+<%= link_to 'Edit', edit_submission_format_path(@submission_format) %> |
+<%= link_to 'Back', submission_formats_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Submission Formats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @submission_formats.each do |submission_format| %>
+      <tr>
+        <td><%= submission_format.name %></td>
+        <td><%= submission_format.code %></td>
+        <td><%= link_to 'Show', submission_format %></td>
+        <td><%= link_to 'Edit', edit_submission_format_path(submission_format) %></td>
+        <td><%= link_to 'Destroy', submission_format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Submission Format', new_submission_format_path %>
